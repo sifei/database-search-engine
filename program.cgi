@@ -249,7 +249,7 @@ else{
 		$count++;
 
 	print "</table><br><br>";
-	print "<form name=return action=cs216program5.html>";
+	print "<form name=return action=program.html>";
 	print "<input type=sumbit value=\"Return to main menu\">";
 	print "</form>";
 }
