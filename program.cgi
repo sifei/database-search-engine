@@ -1,5 +1,5 @@
 #!/usr/local/bin/perl
-# cs216program5.cgi
+# 
 # program to search with (Perl or C++)
 # search method (patient by number, patient by name or event ID)
 # search key
@@ -10,7 +10,7 @@
 # Due Date: Dec 3, 2009
 #
 # Introudction:
-# For this program, users will use browser to execute the script cs216program5.cgi via the post method through html. Data sent as name-value pairs. Then the program will found the data and output for the user.
+# For this program, users will use browser to execute the script program.cgi via the post method through html. Data sent as name-value pairs. Then the program will found the data and output for the user.
 
 use strict;
 
@@ -70,7 +70,7 @@ if($pairs[0] eq "perl")
 	{
 		print "<br><b>Event data using Perl</b><br>";
 	}
-	$newreturned = `./cs216program5.pl $pairs[1] $pairs[2]`;
+	$newreturned = `./program.pl $pairs[1] $pairs[2]`;
 }
 
 #message informing user C++ program executed to serach either patient data or event data.
@@ -84,7 +84,7 @@ if($pairs[0] eq "cpp")
 	{
 		print "<br><b>Event data using C\+\+</b><br>";
 	}
-	$newreturned = `./cs216program5 $pairs[1] $pairs[2]`;
+	$newreturned = `./program $pairs[1] $pairs[2]`;
 	
 }
 
@@ -135,7 +135,7 @@ if($pairs[1] eq "1"){
 	print "<input type=submit value=\"Display event data\">";
 		
 	
-	print "<form name=return action=cs216program5.html>";
+	print "<form name=return action=program.html>";
 	print "<input type=sumbit value=\"Return to main menu\">";
 	print "</form>";
 }
@@ -218,7 +218,7 @@ elsif($pairs[1] eq "2"){
 	
 	}
 	print "</table><br><br>";
-	print "<form name=return action=cs216program5.html>";
+	print "<form name=return action=program.html>";
 	print "<input type=sumbit value=\"Return to main menu\">";
 	print "</form>";
 }
