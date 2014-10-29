@@ -1,0 +1,78 @@
+<style type="text/css"> 
+html, body { 
+background: url('kentucky.jpg'); 
+background-repeat: repeat; 
+}
+</style> 
+
+
+<html>
+<head>
+<title>Sifei Han - Database Search Engine</title>
+<center><h1><font color = #ff0000> UK Hospital Datebase</h1></center>
+
+</head>
+
+<body>
+
+<form action=cs216program5.cgi method=post >
+
+<center><table border = 5  width = 33% bgcolor = teal style="color: #000000">
+
+<tr>
+	<td>Program to invoke:<tr><td>
+</tr>
+
+<tr>
+	<td ALIGN="right"><input type=radio value=cpp name=program checked></td>
+        <td>C++</td>
+</tr>
+
+<tr>
+	<td ALIGN="right"><input type=radio value=perl name=program></td>
+        <td>Perl</td>
+</tr>
+
+<tr>
+
+	<td>Data to search for:</td>
+
+</tr>
+
+<tr>
+
+	<td ALIGN="right"><input type=radio value=option1 name=option checked></td>
+	<td>Patient by number </td>
+
+</tr>
+
+<tr>
+
+	<td ALIGN="right"><input type=radio value=option2 name=option></td>
+	<td>Patient by name </td>
+
+</tr>
+
+<tr>
+	<td ALIGN="right"><input type=radio value=option3 name=option></td>
+	<td>Event </td>
+
+</tr>
+
+<tr>
+
+	<td>Patient number patient name or event ID to search for:</td>
+	<td><input type=text value="" name=searchkey></td>
+
+</tr>
+
+</table>
+
+<br>
+<input type=submit value="Submit">
+</center>
+
+
+</form>
+</body>
+</html>
